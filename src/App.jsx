@@ -33,6 +33,16 @@ const style = {
     fontSize: 15,
     cursor: "pointer",
   },
+  revision: {
+    margin: 0,
+    padding: "8px 20px",
+    borderRadius: 10,
+    background: "rgba(74,222,128,.12)",
+    border: "1px solid rgba(74,222,128,.45)",
+    color: "#4ade80",
+    fontSize: 18,
+    fontWeight: 700,
+  },
 };
 
 export default function App() {
@@ -48,6 +58,7 @@ export default function App() {
     <div style={style.page}>
       <span style={style.badge}>AX Deploy · MVP e2e</span>
       <h1 style={style.h1}>🚀 victoree 디플로이 포탈 테스트 중</h1>
+      <p style={style.revision}>✅ 두 번째 수정 반영</p>
       <p style={style.clock}>{now.toLocaleString("ko-KR")} — React가 살아있다는 증거</p>
       <button style={style.count} onClick={() => setCount((c) => c + 1)}>
         클릭 {count}번 — 상태도 동작
